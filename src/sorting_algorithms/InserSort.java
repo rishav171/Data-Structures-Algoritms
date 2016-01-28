@@ -31,7 +31,22 @@ public class InserSort {
 	}
 
 	private static void merge(int[] array, int start, int mid, int end) {
-		// TODO Auto-generated method stub
+		
+		
+		int n1=mid-start+1;
+		int n2=end-mid;
+		int[] leftSide = null;
+		int rightSide[] = null;
+		
+		for(int i=0;i<n1;i++){
+			leftSide[i]=array[i+1];
+		}
+		for(int j=0;j<n2;j++){
+			rightSide[j]=array[mid+j];
+		}
+		
+		if(leftside[i])
+		
 		
 	}
 
