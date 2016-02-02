@@ -7,20 +7,9 @@ public class QuickSort {
 		Quicksort(array,0,array.length-1);
 	}
 
-	private static void Quicksort(int[] array, int start, int end) {
-		while(start<=end){
-		partition(array,start,end);
-		Quicksort(array,start,pivot_index-1);
-		Quicksort(array,pivot_index+1,end);
-		
-		
-		}
-		
-		
-	}
-
+	
 	private static int partition(int[] array, int start, int end) {
-		int pivot_index=0;
+		int pivot_index=start;
 		int pivot=array[end];
 		
 		for(int i=0;i<end;i++){
@@ -33,6 +22,18 @@ public class QuickSort {
 		swap(array[pivot_index],array[end]);
 		return pivot_index;
 		
+		
+		
+	}
+	private static void Quicksort(int[] array, int start, int end) {
+		
+		while(start<=end){
+			int partitionindex=partition(array,start,end);
+		Quicksort(array,start,partitionindex-1);
+		Quicksort(array,partitionindex+1,end);
+		
+		
+		}
 		
 		
 	}
