@@ -10,23 +10,11 @@ package sorting_algorithms;
 
 	    public static void main(String[] args) {
 
-	        // Get a random generated array
-
 	        a = getArray();
 
-	         
-
-	        // prints the given array
-
+	   
 	        printArray();
-
-	         
-
-	        // sort the array
-
 	        sort();
-
-	         
 
 	        System.out.println("");
 
@@ -72,15 +60,12 @@ package sorting_algorithms;
 
 	            return;
 
-	         
-
-	        // For the simplicity, we took the right most item of the array as a pivot 
 
 	        int pivot = a[right];
+         int partition = partition(left, right, pivot);
+    
 
-	        int partition = partition(left, right, pivot);
-
-	         
+	
 
 	        // Recursively, calls the quicksort with the different left and right parameters of the sub-array
 
