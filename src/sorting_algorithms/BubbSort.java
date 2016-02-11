@@ -15,14 +15,27 @@ public class BubbSort {
 
 	private static void BubbleSort(int[] Array) {
 		int n=Array.length;
-		for(int  i=0; i< n-2; i++)
+		boolean swapped = true;
+		while(swapped)
 		{
-			for(int j=0;j<n-i-1;j++){
-				if(Array[j]>Array[j+1])
+		
+		for(int  i=0; i< n-i-1; i++){
+			swapped=false;	
+			
+			
+		
+			for(int j=0;j<n-1;j++){
+				if(Array[j]>Array[j+1]){
+					//swapped=true;
 				swap(Array,j,j+1);
+				
+								
+				swapped=true;
+				}
 				
 			}
 			
+		}
 		}
 		
 		
@@ -42,12 +55,6 @@ public class BubbSort {
 		
 	}
 
-	/*private static void swap(int[] array, int j, int i) {
-		int temp=array[i];
-		array[i]=array[j];
-		array[j]=temp;
-		
-		
-	*/
+
 
 
