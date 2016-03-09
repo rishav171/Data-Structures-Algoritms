@@ -2,11 +2,17 @@ package DS;
 
 public class LinkedList {
 
-	private node Head;
+	
+	private node head;
+	
 	
 	public void InsertatHead(int data){
 		node newnode=new node(data);
-		newnode.setNextnode(this.Head);
+		newnode.setNextnode(this.head);
+		
+		
+		
+		
 	}
 	
 }
