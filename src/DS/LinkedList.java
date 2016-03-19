@@ -7,12 +7,11 @@ public class LinkedList {
 	
 	
 	public void InsertatHead(int data){
-		head=null;
-		node newnode=new node(data);
-		//newnode.setData(2);
-		newnode.setNextnode(this.head);
-		this.head=newnode;
-		System.out.println();
+	node newnode=new node(data);
+	newnode.setNextnode(this.head);
+	this.head=newnode;
+	
+	
 		
 		
 		
