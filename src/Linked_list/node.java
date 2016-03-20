@@ -1,4 +1,4 @@
-package DS;
+package Linked_list;
 
 public class node {
 	private int data;
@@ -7,8 +7,8 @@ public class node {
 	
 	
 	
-	public node(node nextnode) {
-		Nextnode = nextnode;
+	public node(int data) {
+		this.data = data;
 	}
 	public int getData() {
 		return data;
@@ -22,6 +22,12 @@ public class node {
 	public void setNextnode(node nextnode) {
 		Nextnode = nextnode;
 	}
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "data"+" "+this.data;
+	}
+	
 	
 	
 	

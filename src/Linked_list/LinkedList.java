@@ -1,4 +1,5 @@
-package DS;
+package Linked_list;
+
 
 public class LinkedList {
 
@@ -10,14 +11,39 @@ public class LinkedList {
 	node newnode=new node(data);
 	newnode.setNextnode(this.head);
 	this.head=newnode;
+		
+		
+	} 
 	
-	
+	public int length(){
+		
+		int length=0;
+		node current=this.head;
+		while(current!=null){
+			
+			length++;
+			current=current.getNextnode();
+		}
+		return length;
 		
 		
+	}
+	public void delFromHead(){
 		
+		this.head=this.head.getNextnode();
 		
+	}
+	public node node_find(int data){
 		
-		
+		node current=this.head;
+		while(current!=null){
+			if(current.getData()==data){
+				return current;
+			}
+			current=current.getNextnode();
+			
+		}
+		return null;
 		
 		
 	}
